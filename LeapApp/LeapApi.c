@@ -12,7 +12,7 @@
 #include "LeapApi.h"
 #include "BaseUtils_C.h"
 
-int lastFrameID = 0; //The last frame received
+int64_t lastFrameID = 0; //The last frame received
 
 
 int GetLeapData(LEAP_HAND* leapHand[], const uint8_t bufzize, int64_t* frameID, uint8_t* nHands) {
